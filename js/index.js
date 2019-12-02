@@ -100,5 +100,5 @@ contactInfo[2].textContent = siteContent['contact']['email']
 
 //footer
 
-const footer = document.querySelector('footer p')
-footer.textcontent = siteContent['footer']['footer']
+const footer = document.querySelector('footer')
+footer.textContent = siteContent['footer']['copyright']
