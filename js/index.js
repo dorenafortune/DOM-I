@@ -44,12 +44,35 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //this is for the navs
 const nav = document.querySelectorAll('a');
 
+//appending and prepending
+
+const newNav1 = document.createElement('a');
+const newNav2 = document.createElement('a');
+
+newNav1.textContent = "Yay"
+
+newNav2.textContent = "Okay"
+
+const newParent = document.querySelector('nav')
+
+newParent.append(newNav1)
+newParent.prepend(newNav2)
+
+
+
 nav[0].textContent = siteContent['nav']['nav-item-1'];
 nav[1].textContent = siteContent['nav']['nav-item-2'];
 nav[2].textContent = siteContent['nav']['nav-item-3'];
 nav[3].textContent = siteContent['nav']['nav-item-4'];
 nav[4].textContent = siteContent['nav']['nav-item-5'];
 nav[5].textContent = siteContent['nav']['nav-item-6'];
+
+nav.forEach(function(element){
+  element.style.color = 'green';
+})
+
+
+
 
 //cta
 
